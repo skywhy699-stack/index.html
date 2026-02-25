@@ -1,15 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Still Here?</title>
-    <meta http-equiv="refresh" content="3;url=page3.html">
+    <title>Special Surprise 😈</title>
     <style>
-        body { background: darkred; color: white; font-family: Arial Black; text-align: center; margin-top: 20%; }
-        h1 { font-size: 70px; }
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            overflow: hidden;
+            animation: flashBg 0.5s infinite alternate;
+            font-family: Impact, Arial Black, sans-serif;
+        }
+
+        @keyframes flashBg {
+            0% { background-color: black; }
+            100% { background-color: red; }
+        }
+
+        h1 {
+            font-size: 120px;
+            color: white;
+            text-transform: uppercase;
+            position: absolute;
+            animation: shake 0.2s infinite, glitch 1s infinite;
+            text-shadow: 5px 5px 0px red, -5px -5px 0px blue;
+        }
+
+        @keyframes shake {
+            0% { transform: translate(2px, 2px); }
+            25% { transform: translate(-2px, -2px); }
+            50% { transform: translate(2px, -2px); }
+            75% { transform: translate(-2px, 2px); }
+            100% { transform: translate(2px, 2px); }
+        }
+
+        @keyframes glitch {
+            0% { opacity: 1; }
+            20% { opacity: 0.8; }
+            40% { opacity: 1; }
+            60% { opacity: 0.6; }
+            80% { opacity: 1; }
+            100% { opacity: 0.9; }
+        }
+
+        .btn {
+            position: absolute;
+            bottom: 100px;
+            padding: 20px 40px;
+            font-size: 20px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: yellow;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
-    <h1>You really thought it was over? 😂</h1>
-    <p>Patience...</p>
+
+    <h1>FUCK OFF</h1>
+
+    <a class="btn" href="https://www.google.com" target="_blank">
+        Click If You Dare 😈
+    </a>
+
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <title>Oh You Clicked 😈</title>
+    <meta http-equiv="refresh" content="3;url=page2.html">
+    <style>
+        body {
+            background: black;
+            color: red;
+            font-family: Impact;
+            text-align: center;
+            margin-top: 20%;
+        }
+        h1 {
+            font-size: 80px;
+            animation: shake 0.3s infinite;
+        }
+        @keyframes shake {
+            0% { transform: translate(2px,2px); }
+            50% { transform: translate(-2px,-2px); }
+            100% { transform: translate(2px,2px); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Ohhh you opened it 😏</h1>
+    <p>Wait for it...</p>
 </body>
 </html>
